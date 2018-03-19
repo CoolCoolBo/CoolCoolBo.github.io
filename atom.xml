@@ -2,24 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Bobo&#39; Blog</title>
   
-  <subtitle>你好哇，香香小妹妹！</subtitle>
+  <subtitle>梦想还是要有的，万一实现了呢！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-03-19T07:43:24.185Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://qq512167784.github.io/"/>
+  <updated>2018-03-19T13:07:38.613Z</updated>
+  <id>http://qq512167784.github.io/</id>
   
   <author>
-    <name>Z.J.Bo</name>
+    <name>ZhangJ.Bo</name>
     
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Test</title>
+    <link href="http://qq512167784.github.io/2018/03/19/Test/"/>
+    <id>http://qq512167784.github.io/2018/03/19/Test/</id>
+    <published>2018-03-19T13:08:02.429Z</published>
+    <updated>2018-03-19T13:07:38.613Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个测试博客</p><h2 id="Hello"><a href="#Hello" class="headerlink" title="Hello"></a>Hello</h2><h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">你好师姐！</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;这是一个测试博客&lt;/p&gt;
+&lt;h2 id=&quot;Hello&quot;&gt;&lt;a href=&quot;#Hello&quot; class=&quot;headerlink&quot; title=&quot;Hello&quot;&gt;&lt;/a&gt;Hello&lt;/h2&gt;&lt;h3 id=&quot;测试&quot;&gt;&lt;a href=&quot;#测试&quot; class=&quot;headerlink&quot; 
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="http://qq512167784.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="测试" scheme="http://qq512167784.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/03/19/hello-world/"/>
-    <id>http://yoursite.com/2018/03/19/hello-world/</id>
+    <link href="http://qq512167784.github.io/2018/03/19/hello-world/"/>
+    <id>http://qq512167784.github.io/2018/03/19/hello-world/</id>
     <published>2018-03-19T07:43:24.185Z</published>
     <updated>2018-03-19T07:43:24.185Z</updated>
     
