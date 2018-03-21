@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qq512167784.github.io/"/>
-  <updated>2018-03-21T08:09:47.411Z</updated>
+  <updated>2018-03-21T15:05:57.332Z</updated>
   <id>http://qq512167784.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python3的virtualenv安装</title>
+    <link href="http://qq512167784.github.io/2018/03/21/virtualenv/"/>
+    <id>http://qq512167784.github.io/2018/03/21/virtualenv/</id>
+    <published>2018-03-21T15:05:57.332Z</published>
+    <updated>2018-03-21T15:05:57.332Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="virtualenv-安装"><a href="#virtualenv-安装" class="headerlink" title="virtualenv 安装"></a>virtualenv 安装</h2><p>使用如下命令安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install virtualenv</span><br></pre></td></tr></table></figure></p><p>使用以上命令安装时出现了如下错误:<br><figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://wx2.sinaimg.cn/mw690/e928c1fbly1fpkthvk95yj20pt08ln1x.jpg" alt="" title="">                </div>                <div class="image-caption"></div>            </figure><br>最后命令前加上<em>sudo</em>就成功安装了。如果想使用mkvirtualenv命令还需要安装virtualenvwrapper工具。</p><h2 id="virtualenvwrapper-安装"><a href="#virtualenvwrapper-安装" class="headerlink" title="virtualenvwrapper 安装"></a>virtualenvwrapper 安装</h2><p>输入下面指令安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 intall virtualenvwrapper</span><br></pre></td></tr></table></figure></p><p>安装完成后，需要在用户目录下的.bashrc末尾加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export WORKON_HOME=$HOME/bobo/.virtualenvs</span><br><span class="line">source /usr/local/bin/virtualenvwrapper.sh</span><br></pre></td></tr></table></figure></p><p>然后运行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bashrc</span><br></pre></td></tr></table></figure></p><p>此时如果报错;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/usr/bin/python:Nomodule named virtualenvwrapper</span><br><span class="line"></span><br><span class="line">virtualenvwrapper.sh:Therewas a problem running the initialization hooks.</span><br><span class="line"></span><br><span class="line">IfPythoncouldnotimportthe module virtualenvwrapper.hook_loader,</span><br><span class="line"></span><br><span class="line">check that virtualenvwrapper has been installedfor</span><br><span class="line"></span><br><span class="line">VIRTUALENVWRAPPER_PYTHON=/usr/bin/pythonandthat PATHis</span><br><span class="line"></span><br><span class="line">set properly.</span><br></pre></td></tr></table></figure></p><p>解决办法：“加粗斜体”的部分将ubuntu中路径设置为python3（当py2和py3共存的时候）</p><p>在~/.bashrc文件的最下方加入下面语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then</span><br><span class="line"></span><br><span class="line">       export WORKON_HOME=$HOME/.virtualenvs</span><br><span class="line"></span><br><span class="line">       export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3</span><br><span class="line"></span><br><span class="line">       source /usr/local/bin/virtualenvwrapper.sh</span><br><span class="line"></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></p><p>然后再重新执行 <code>source .bashrc</code> ，此时就算全部配置好了。新建的虚拟环境默认在用户目录下的.virtualenvs文件夹里面。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;virtualenv-安装&quot;&gt;&lt;a href=&quot;#virtualenv-安装&quot; class=&quot;headerlink&quot; title=&quot;virtualenv 安装&quot;&gt;&lt;/a&gt;virtualenv 安装&lt;/h2&gt;&lt;p&gt;使用如下命令安装：&lt;br&gt;&lt;figure class
+      
+    
+    </summary>
+    
+      <category term="学习" scheme="http://qq512167784.github.io/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+      <category term="Django" scheme="http://qq512167784.github.io/tags/Django/"/>
+    
+      <category term="virtualenv" scheme="http://qq512167784.github.io/tags/virtualenv/"/>
+    
+  </entry>
   
   <entry>
     <title>（最清晰简单教程）Deepin(linux)下如何利用Hexo+github搭建个人博客</title>
