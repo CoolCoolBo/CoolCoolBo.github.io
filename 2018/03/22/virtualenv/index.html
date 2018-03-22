@@ -24,12 +24,12 @@
 <meta name="keywords" content="Django,virtualenv">
 <meta property="og:type" content="article">
 <meta property="og:title" content="python3的virtualenv安装">
-<meta property="og:url" content="http://qq512167784.github.io/2018/03/21/virtualenv/index.html">
+<meta property="og:url" content="http://qq512167784.github.io/2018/03/22/virtualenv/index.html">
 <meta property="og:site_name" content="Bobo&#39; Blog">
 <meta property="og:description" content="virtualenv 安装使用如下命令安装：1pip3 install virtualenv 使用以上命令安装时出现了如下错误:                                                                                                          最后命令前加上sudo就成功安装了。如果想使用mkvirtu">
 <meta property="og:locale" content="zh-En">
 <meta property="og:image" content="https://wx2.sinaimg.cn/mw690/e928c1fbly1fpkthvk95yj20pt08ln1x.jpg">
-<meta property="og:updated_time" content="2018-03-21T15:05:57.332Z">
+<meta property="og:updated_time" content="2018-03-22T02:51:07.344Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python3的virtualenv安装">
 <meta name="twitter:description" content="virtualenv 安装使用如下命令安装：1pip3 install virtualenv 使用以上命令安装时出现了如下错误:                                                                                                          最后命令前加上sudo就成功安装了。如果想使用mkvirtu">
@@ -127,7 +127,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -146,8 +146,8 @@
         <h1 class="title">python3的virtualenv安装</h1>
         <h5 class="subtitle">
             
-                <time datetime="2018-03-21T15:05:57.332Z" itemprop="datePublished" class="page-time">
-  2018-03-21
+                <time datetime="2018-03-22T02:51:07.344Z" itemprop="datePublished" class="page-time">
+  2018-03-22
 </time>
 
 
@@ -179,7 +179,7 @@
     <div class="post-card">
         <h1 class="post-card-title">python3的virtualenv安装</h1>
         <div class="post-meta">
-            <time class="post-time" title="2018-03-21 23:05:57" datetime="2018-03-21T15:05:57.332Z"  itemprop="datePublished">2018-03-21</time>
+            <time class="post-time" title="2018-03-22 10:51:07" datetime="2018-03-22T02:51:07.344Z"  itemprop="datePublished">2018-03-22</time>
 
             
 	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/学习/">学习</a></li></ul>
@@ -203,11 +203,14 @@
                 <div class="image-caption"></div>
             </figure><br>最后命令前加上<em>sudo</em>就成功安装了。如果想使用mkvirtualenv命令还需要安装virtualenvwrapper工具。</p>
 <h2 id="virtualenvwrapper-安装"><a href="#virtualenvwrapper-安装" class="headerlink" title="virtualenvwrapper 安装"></a>virtualenvwrapper 安装</h2><p>输入下面指令安装：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 intall virtualenvwrapper</span><br></pre></td></tr></table></figure></p>
-<p>安装完成后，需要在用户目录下的.bashrc末尾加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export WORKON_HOME=$HOME/bobo/.virtualenvs</span><br><span class="line">source /usr/local/bin/virtualenvwrapper.sh</span><br></pre></td></tr></table></figure></p>
+<p>安装完成后，需要在用户目录下的.bashrc末尾加入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">export WORKON_HOME=$HOME/.virtualenvs</span><br><span class="line">source /usr/local/bin/virtualenvwrapper.sh</span><br></pre></td></tr></table></figure></p>
 <p>然后运行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source .bashrc</span><br></pre></td></tr></table></figure></p>
-<p>此时如果报错;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/usr/bin/python:Nomodule named virtualenvwrapper</span><br><span class="line"></span><br><span class="line">virtualenvwrapper.sh:Therewas a problem running the initialization hooks.</span><br><span class="line"></span><br><span class="line">IfPythoncouldnotimportthe module virtualenvwrapper.hook_loader,</span><br><span class="line"></span><br><span class="line">check that virtualenvwrapper has been installedfor</span><br><span class="line"></span><br><span class="line">VIRTUALENVWRAPPER_PYTHON=/usr/bin/pythonandthat PATHis</span><br><span class="line"></span><br><span class="line">set properly.</span><br></pre></td></tr></table></figure></p>
+<p>此时若有如下报错;</p>
+<blockquote>
+<p>/usr/bin/python:Nomodule named virtualenvwrapper<br>virtualenvwrapper.sh:Therewas a problem running the initialization hooks.<br>If Python could not importthe module virtualenvwrapper.hook_loader,<br>check that virtualenvwrapper has been installedfor<br>VIRTUALENVWRAPPER_PYTHON=/usr/bin/pythonandthat PATHis<br>set properly.</p>
+</blockquote>
 <p>解决办法：“加粗斜体”的部分将ubuntu中路径设置为python3（当py2和py3共存的时候）</p>
-<p>在~/.bashrc文件的最下方加入下面语句：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then</span><br><span class="line"></span><br><span class="line">       export WORKON_HOME=$HOME/.virtualenvs</span><br><span class="line"></span><br><span class="line">       export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3</span><br><span class="line"></span><br><span class="line">       source /usr/local/bin/virtualenvwrapper.sh</span><br><span class="line"></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></p>
+<p>在~/.bashrc文件中将刚才添加的命令替换成以下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then</span><br><span class="line"></span><br><span class="line">       export WORKON_HOME=$HOME/.virtualenvs</span><br><span class="line"></span><br><span class="line">       export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3</span><br><span class="line"></span><br><span class="line">       source /usr/local/bin/virtualenvwrapper.sh</span><br><span class="line"></span><br><span class="line">fi</span><br></pre></td></tr></table></figure></p>
 <p>然后再重新执行 <code>source .bashrc</code> ，此时就算全部配置好了。新建的虚拟环境默认在用户目录下的.virtualenvs文件夹里面。</p>
 
         </div>
@@ -217,12 +220,12 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-03-21T15:05:57.332Z" itemprop="dateUpdated">2018-03-21 23:05:57</time>
+    最終更新：<time datetime="2018-03-22T02:51:07.344Z" itemprop="dateUpdated">2018-03-22 10:51:07</time>
 </span><br>
 
 
         
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/03/21/virtualenv/" target="_blank" rel="external">http://qq512167784.github.io/2018/03/21/virtualenv/</a>
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2018/03/22/virtualenv/" target="_blank" rel="external">http://qq512167784.github.io/2018/03/22/virtualenv/</a>
         
     </div>
     
@@ -253,7 +256,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://qq512167784.github.io/2018/03/21/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&pic=http://qq512167784.github.io/img/touxiang.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://qq512167784.github.io/2018/03/22/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&pic=http://qq512167784.github.io/img/touxiang.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -263,22 +266,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://qq512167784.github.io/2018/03/21/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&source=Hello,python,机器学习,编程" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://qq512167784.github.io/2018/03/22/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&source=Hello,python,机器学习,编程" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://qq512167784.github.io/2018/03/21/virtualenv/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://qq512167784.github.io/2018/03/22/virtualenv/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python3的virtualenv安装》 — Bobo' Blog&url=http://qq512167784.github.io/2018/03/21/virtualenv/&via=http://qq512167784.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python3的virtualenv安装》 — Bobo' Blog&url=http://qq512167784.github.io/2018/03/22/virtualenv/&via=http://qq512167784.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://qq512167784.github.io/2018/03/21/virtualenv/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://qq512167784.github.io/2018/03/22/virtualenv/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -401,7 +404,7 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
         </p>
     </div>
     <div class="bottom">
@@ -423,7 +426,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://qq512167784.github.io/2018/03/21/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&pic=http://qq512167784.github.io/img/touxiang.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://qq512167784.github.io/2018/03/22/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&pic=http://qq512167784.github.io/img/touxiang.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -433,22 +436,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://qq512167784.github.io/2018/03/21/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&source=Hello,python,机器学习,编程" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://qq512167784.github.io/2018/03/22/virtualenv/&title=《python3的virtualenv安装》 — Bobo' Blog&source=Hello,python,机器学习,编程" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://qq512167784.github.io/2018/03/21/virtualenv/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://qq512167784.github.io/2018/03/22/virtualenv/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python3的virtualenv安装》 — Bobo' Blog&url=http://qq512167784.github.io/2018/03/21/virtualenv/&via=http://qq512167784.github.io" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《python3的virtualenv安装》 — Bobo' Blog&url=http://qq512167784.github.io/2018/03/22/virtualenv/&via=http://qq512167784.github.io" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://qq512167784.github.io/2018/03/21/virtualenv/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://qq512167784.github.io/2018/03/22/virtualenv/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -459,7 +462,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJUlEQVR42u3aQY7DIBAEwPz/097zKjLuYUikQHGKFDtLcehlGF6veFxv4+6Zu+fv3hr/zuKBgYHxs4xrON6fuftjd9MdvzVepmRuGBgY5zCSAB2/dfd8Monxu1EoY2BgYAzDtxqOSbBiYGBg9Bn9bV+yQBgYGBjVIjY5DuuXxB+vxTEwMH6QUT2s/+bnj/Q3MDAwfopxFcdcIHYCOpoVBgbG1ow84NYenBUml88HAwNja0ZnU5gcsa26jta6OoaBgbEFI4+86ubv05GNgYFxDqN/ZP+dqMXAwDiNUS0m87WZO5Kbu1KGgYGxNyOPtnFZm7cE5jZ80TYUAwNjU0b+c/m3qy5qJMv6b2uIgYFxGGPucG1tQZssHAYGxjmM6sauevTWKWsLt0UwMDAOZvSbi/17Hw9PYmBgHMCYKx1XvTt30Paww8XAwNiIkTQA8sZAEuj9tsTDtxgYGJsyqpchkilWL0xUN5TlmyMYGBhbMDoH9EkJWm1klpsTGBgYBzASTBKjSYgn8V1tVGBgYJzDWDuV6jLNXfLAwMA4jdG54NWP1Lyd+VCLY2BgbMS4iiMvest9ifgfQGH9MDAwtmAsSOupZmf1gK/aOsXAwNiPUQ3ZvNGYR21eDGNgYJzMyINvrt2YL02rFsfAwMCYOsrPwXMhjoGBgVG9SJHHZR61UTGMgYFxACNvQObHZ3ONzyTiMTAwTmPkpWMSmv1mZ7U8xsDA2JrxBy+Z0T8pvySZAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aS1LDMBAFQO5/6XCAYPGepFBYbq9SxHbUWgzz0ddXfL3erqt7ru6/emr8ns0XBgbGbRmv4fV+z9WPXS13/NR4m5K1YWBgPIeRBNC55SaLGD8bBWUMDAyMqaA5XvSYioGBgbGLkRe3eajFwMDAWClik3bYekn88VocAwPjhoy2Wf+Xnz8y38DAwLgV41VeyUggT+/m1vDDr2BgYBzNyAPc3sZZsbh8PRgYGEcz5oaXeYtt13G0+ugYBgbGcYy5lO4/hGwMDIznMNqBYt7039XaKwI6BgbGoYwk/UqabnNjyJUjZRgYGE9mzAXZfISQJ3xFGoqBgXEcI3/d+pCy/ZxvKwYGxjMZbcqY4NdL2cu/YGBgPIDRJnZtabr+bHRaBAMD41BG2+KfGy4unftoT4hgYGAcx5grU9sUMCfNDRswMDDOZrRNsTxYJ9+2WxB9i4GBcRxjLmgmzbj2wESbUEb/NzAwMI5g5I2tPBzPHbCYGzkUO42BgXEEY6UQzQ9n5AfL2kEFBgbGMxmv5Ss/ctGG6cn5BgYGxs0ZbZs+2Y42pObjzKiIxcDAOIKxEkDbIcHKdvzyFAYGxtGMlTCXN/FXkPVhCwwMjEMZK62uNuFr23kYGBgY7at3la/t+zcctsDAwHgwY2UkME4o22YfBgYGRluyJuGyfWpzwMXAwLghow2decm6awywrRbHwMC4ISMvHfN0sC198xxvaaiJgYFxP8Y33rEZBrprBQAAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
