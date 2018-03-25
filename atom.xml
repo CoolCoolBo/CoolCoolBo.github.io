@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qq512167784.github.io/"/>
-  <updated>2018-03-22T02:51:07.344Z</updated>
+  <updated>2018-03-25T07:42:51.281Z</updated>
   <id>http://qq512167784.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装Pthon mysqlclient出现“OSError： mysql_config not found”错误</title>
+    <link href="http://qq512167784.github.io/2018/03/25/python%E5%AE%89%E8%A3%85mysqlclient/"/>
+    <id>http://qq512167784.github.io/2018/03/25/python安装mysqlclient/</id>
+    <published>2018-03-25T07:42:51.281Z</published>
+    <updated>2018-03-25T07:42:51.281Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><p>在python虚拟环境中用pip install mysqlclient安装mysqlclient时出现错误“OSError: mysql_config not found”。</p><h3 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h3><p>先退出虚拟环境安装libmysqlclient-dev包即可：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libmysqlclient-dev python3-dev</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;问题&quot;&gt;&lt;a href=&quot;#问题&quot; class=&quot;headerlink&quot; title=&quot;问题&quot;&gt;&lt;/a&gt;问题&lt;/h3&gt;&lt;p&gt;在python虚拟环境中用pip install mysqlclient安装mysqlclient时出现错误“OSError: mysql_
+      
+    
+    </summary>
+    
+      <category term="教程" scheme="http://qq512167784.github.io/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+      <category term="python" scheme="http://qq512167784.github.io/tags/python/"/>
+    
+      <category term="mysqlclient" scheme="http://qq512167784.github.io/tags/mysqlclient/"/>
+    
+  </entry>
   
   <entry>
     <title>python3的virtualenv安装</title>
